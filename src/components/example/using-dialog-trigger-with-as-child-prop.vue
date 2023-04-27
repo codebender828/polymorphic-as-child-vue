@@ -10,7 +10,7 @@
     </dialog-trigger>
 
     <dialog-trigger class="space-inline-end-4" id="blue-cats">
-      <span>Dialog Trigger Default (Vue SFC)</span>
+      Dialog Trigger Default (Vue SFC)
     </dialog-trigger>
   </div>
 </template>
