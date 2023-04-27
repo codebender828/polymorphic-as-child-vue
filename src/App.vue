@@ -1,30 +1,34 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="v-stack-4">
+    <h1 class="space-block-end-5">Vue <code>asChild</code> prop</h1>
+    <dialog-trigger-example-tsx class="space-block-end-5" />
+    <dialog-trigger-example-vue class="space-block-end-5" />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<script setup lang="ts">
+import DialogTriggerExampleTsx from "./components/example/using-dialog-trigger-with-as-child-prop";
+import DialogTriggerExampleVue from "./components/example/using-dialog-trigger-with-as-child-prop.vue";
+</script>
+
+<style>
+.space-block-end-3 {
+  margin-block-end: 0.75rem;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.space-block-end-4 {
+  margin-block-end: 1rem;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.space-block-end-5 {
+  margin-block-end: 1.25rem;
+}
+
+.space-inline-end-3 {
+  margin-inline-end: 0.75rem;
+}
+.space-inline-end-4 {
+  margin-inline-end: 1rem;
+}
+.space-inline-end-5 {
+  margin-inline-end: 1.25rem;
 }
 </style>
