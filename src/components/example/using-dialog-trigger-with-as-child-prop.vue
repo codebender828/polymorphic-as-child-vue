@@ -6,7 +6,9 @@
       as-child
       v-slot:default="props"
     >
-      <span v-bind="props">Dialog Trigger (asChild &rarr; Vue SFC)</span>
+      <span v-bind="props" class="redhot"
+        >Dialog Trigger (asChild &rarr; Vue SFC)</span
+      >
     </dialog-trigger>
 
     <dialog-trigger class="space-inline-end-4" id="blue-cats">
@@ -18,3 +20,9 @@
 <script setup lang="ts">
 import { DialogTrigger } from "../dialog-trigger";
 </script>
+
+<style>
+.redhot {
+  background-color: red;
+}
+</style>
