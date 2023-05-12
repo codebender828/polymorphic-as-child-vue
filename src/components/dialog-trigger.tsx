@@ -54,8 +54,6 @@ export const DialogTrigger = defineComponent<DialogProps>(
     const mergedProps = mergeProps(dialogTrigggerProps, attrs);
 
     return () => (
-      // Take note that the component props are spread in both the `<ark.button />` component
-      // as well as inside the default slot. This allows us to render it using scoped slots.
       <ark.button {...mergedProps}>{slots.default?.(mergedProps)}</ark.button>
     );
   }
