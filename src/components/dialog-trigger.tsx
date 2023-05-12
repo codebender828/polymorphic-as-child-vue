@@ -1,5 +1,5 @@
 import { type SetupContext, defineComponent, mergeProps } from "vue";
-import { AsChildProps, withAsChild } from "../withAsChild";
+import { AsChildProps, withAsChild } from "../with-as-child";
 
 // Fake Polymorphic factory
 function comp(Tag: string) {
