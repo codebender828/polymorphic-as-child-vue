@@ -18,7 +18,7 @@ const ark = {
   // Replace comp with any button
   button: withAsChild(comp("button")),
   div: withAsChild(comp("div")),
-  section: withAsChild(comp("div")),
+  section: withAsChild(comp("section")),
 };
 
 let _id = 0;
@@ -34,12 +34,13 @@ function useDialogTriggerProps(userProps: Record<any, any>) {
   }
 
   const id = useId();
+  console.log("id =>", id);
 
   return {
     id,
     ...userProps,
     "data-dialog-trigger": "",
-    onPointerdown: handlePointerDown,
+    onClick: handlePointerDown,
   };
 }
 

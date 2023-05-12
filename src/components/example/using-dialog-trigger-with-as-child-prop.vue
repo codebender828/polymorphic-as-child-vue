@@ -1,14 +1,7 @@
 <template>
   <div>
-    <dialog-trigger
-      class="space-inline-end-4"
-      id="some-random-id"
-      as-child
-      v-slot:default="props"
-    >
-      <span v-bind="props" class="redhot"
-        >Dialog Trigger (asChild &rarr; Vue SFC)</span
-      >
+    <dialog-trigger class="space-inline-end-4" id="some-random-id" as-child>
+      <span class="redhot"> Dialog Trigger (asChild &rarr; Vue SFC) </span>
     </dialog-trigger>
 
     <dialog-trigger class="space-inline-end-4" id="blue-cats">

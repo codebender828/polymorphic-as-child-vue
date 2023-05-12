@@ -3,16 +3,16 @@ import { DialogTrigger, useId } from "../dialog-trigger";
 
 // TSX Example
 const DialogTriggerExampleTsx = defineComponent(() => {
-  const id = useId();
+  const idForAsChild = useId();
+  const idForNormal = useId();
 
   return () => (
     <div>
-      <DialogTrigger id={id} asChild class="space-inline-end-4">
-        {(props: any) => (
-          <span {...props}>Dialog Trigger (asChild &rarr; Vue JSX)</span>
-        )}
+      <DialogTrigger asChild id={idForAsChild} class="space-inline-end-4">
+        <span>Dialog Trigger (asChild &rarr; Vue JSX)</span>
       </DialogTrigger>
-      <DialogTrigger class="space-inline-end-4" id={id}>
+
+      <DialogTrigger class="space-inline-end-4" id={idForNormal}>
         Dialog Trigger Default (Vue JSX)
       </DialogTrigger>
     </div>
