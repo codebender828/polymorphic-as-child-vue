@@ -34,7 +34,6 @@ function useDialogTriggerProps(userProps: Record<any, any>) {
   }
 
   const id = useId();
-  console.log("id =>", id);
 
   return {
     id,
