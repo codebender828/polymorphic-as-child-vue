@@ -1,6 +1,6 @@
 # polymorphic-as-child-vue
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/vitejs-vite-1t1ngf)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/polymorphic-as-child-vue)
 
 Implements the `asChild` prop for Vue.js
 
